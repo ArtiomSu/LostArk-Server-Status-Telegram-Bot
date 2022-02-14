@@ -3,14 +3,14 @@ const cheerio = require('cheerio');
 const Constants = require('./Constants');
 
 get_status = (status) => {
-    if (status == 'good') {
+    if (status == 'Good') {
         return '✅ (good)';
-    } else if (status == 'full') {
+    } else if (status == 'Full') {
         return '⚠️ (full)';
-    } else if (status == 'busy') {
+    } else if (status == 'Busy') {
         return '❌ (busy)';
     } else {
-        return '🔧 (maintenance)';
+        return '🔧 (Maintenance)';
     }
 }
 
